@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -8,43 +8,66 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Platzi Travel</title>
 </head>
 
-<body>
-  <nav></nav>
+<body class="dark:bg-gray-900">
+  <nav
+    class="w-full h-10 hidden bg-white fixed z-40 lg:flex items-center justify-between dark:bg-gray-800 dark:text-white">
 
-  <section class="w-full h-screen">
-    <div id="home">
-      <!-- aca estamos cuadrando lo de la imagen XD -->
-      <div class="w-auto h-screen ">
-        <div class="w-full h-96 flex flex-col pt-4 absolute justify-between items-center">
+    <div class="h-auto h-auto ">
+      <p class="text-xl text-orange-700 font-black dark:text-white">Platzi Travel</p>
+    </div>
+
+    <div class="flex space-x-8">
+      <a class="font-bold text-md text-orange-500 dark:text-white" href="#home">Inicio</a>
+      <a class="font-bold text-md text-orange-500 dark:text-white" href="#recomendados">Recomendados</a>
+      <a class="font-bold text-md text-orange-500 dark:text-white" href="#rentas_destacadas">Rentas Destacadas</a>
+      <a class="font-bold text-md text-orange-500 dark:text-white" href="#faqs">Faqs</a>
+      <a class="font-bold text-md text-orange-500 dark:text-white" href="#about">Sobre nosotros</a>
+    </div>
+
+    <div class="flex space-x-10 justify-between">
+      <a class="" href="#"><i class="fa-solid fa-search text-xl text-gray-200"></i></a>
+      <a><button id="botonDarkPrincipal"><i class="fa-solid fa-moon text-xl text-gray-200"></i></button></a>
+      <a class="" href="#"><i class="fa-solid fa-user text-xl text-gray-200"></i></a>
+    </div>
+    <div></div>
+  </nav>
+
+  <section class="w-full h-screen ">
+    <div class="w-full h-3/4" id="home">
+      <!-- aca estamos cuadrando lo de la imagen -->
+      <div class="w-screen h-full ">
+        <div
+          class="w-full h-full flex flex-col pt-16 absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-47 lg:justify-start lg:pt-30">
 
           <input
-            class="outline-none  p-3 rounded-full shadow-xl transition-all duration-500 ease-in hover:scale-110 transform-hover:-translate-y-1"
+            class="outline-none  p-3 rounded-full shadow-xl transition-all duration-500 ease-in hover:scale-110 transform-hover:-translate-y-1 lg:hidden "
             placeholder="Search" type="search" name="" id="">
 
+          <div class="hidden h-auto lg:w-1/6 lg:flex lg:pb-6 ">
+            <p class="text-4xl mt-10 ml-16 font-bold text-black dark:text-white">Encuentra mas ubicaciones como esta</p>
+          </div>
+
           <button
-            class="transition-all pb-4 duration-500 ease-in-out hover:bg-orange-500 hover:text-black transform-hover:-translate-y-1 hover:scale-110 w-36 bg-white text-xl shadow-xl text-prin text-red-500 font-semibold p-4 rounded-full"
+            class="transition-all pb-4 duration-500 ease-in-out hover:bg-orange-500 hover:text-black transform-hover:-translate-y-1 hover:scale-110 w-36 bg-white text-xl shadow-xl text-prin text-red-500 font-semibold p-4 rounded-full lg:ml-16 "
             type="button">Explorar</button>
 
         </div>
-        <div class="w-full  h-full  ">
-          <img class="w-full h-full object-cover " src="./img/sanFrancisco.jpg" alt="no found">
+        <div
+          class="w-full  h-full  lg:h-full lg:w-screen lg:bg-[url('./img/sanFranciscoDesktop.jpg')] lg:bg-cover lg:bg-center">
+          <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="no found">
         </div>
 
       </div>
     </div>
 
     <div class="p-6 " id="recomendados">
-      <p class="text-3xl font-semibold text-black">Recomendados</p>
+      <p class="text-3xl font-semibold text-black dark:text-white">Recomendados</p>
 
       <div
         class="w-auto h-auto items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
@@ -54,9 +77,9 @@
           <div class="w-full h-3/5 bg-[url('./img/norway.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
-            <p class="text-white font-bold text-lg">Norway</p>
-            <p class="text-white text-lg pt-2">Beautiful landscapes</p>
+          <div class="w-full h-2/5 bg-lime-800 dark:bg-gray-600 pl-3 pt-2">
+            <p class="text-white font-bold text-lg dark:text-white">Norway</p>
+            <p class="text-white text-lg pt-2 dark:text-white">Beautiful landscapes</p>
           </div>
         </div>
 
@@ -65,9 +88,9 @@
           <div class="w-full h-3/5 bg-[url('./img/new_york.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-white pl-3 pt-2">
-            <p class="text-black font-bold text-lg">New York</p>
-            <p class="text-black text-lg pt-2">Concret jungle</p>
+          <div class="w-full h-2/5 bg-white dark:bg-gray-400 pl-3 pt-2">
+            <p class="text-black font-bold text-lg dark:text-white">New York</p>
+            <p class="text-black text-lg pt-2 dark:text-white">Concret jungle</p>
           </div>
         </div>
 
@@ -76,9 +99,9 @@
           <div class="w-full h-3/5 bg-[url('./img/bali.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
-            <p class="text-white font-bold text-lg">Bali</p>
-            <p class="text-white text-lg pt-2">This is bali</p>
+          <div class="w-full h-2/5 dark:bg-gray-600 bg-lime-800 pl-3 pt-2">
+            <p class="text-white font-bold text-lg dark:text-white">Bali</p>
+            <p class="text-white text-lg pt-2 dark:text-white">This is bali</p>
           </div>
         </div>
 
@@ -87,9 +110,9 @@
           <div class="w-full h-3/5 bg-[url('./img/chicago.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-white pl-3 pt-2">
-            <p class="text-black font-bold text-lg">Chicago</p>
-            <p class="text-black text-lg pt-2">This is Chicago</p>
+          <div class="w-full h-2/5 bg-white dark:bg-gray-400 pl-3 pt-2">
+            <p class="text-black font-bold text-lg dark:text-white">Chicago</p>
+            <p class="text-black text-lg pt-2 dark:text-white">This is Chicago</p>
           </div>
         </div>
 
@@ -98,9 +121,9 @@
           <div class="w-full h-3/5 bg-[url('./img/europe.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
-            <p class="text-white font-bold text-lg">Europe</p>
-            <p class="text-white text-lg pt-2">This is Europe</p>
+          <div class="w-full h-2/5 bg-lime-800 dark:bg-gray-600 pl-3 pt-2">
+            <p class="text-white font-bold text-lg dark:text-white">Europe</p>
+            <p class="text-white text-lg pt-2 dark:text-white">This is Europe</p>
           </div>
         </div>
 
@@ -109,9 +132,9 @@
           <div class="w-full h-3/5 bg-[url('./img/iceland.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-white pl-3 pt-2">
-            <p class="text-black font-bold text-lg">Iceland</p>
-            <p class="text-black text-lg pt-2">This is Iceland</p>
+          <div class="w-full h-2/5 bg-white dark:bg-gray-400 pl-3 pt-2">
+            <p class="text-black font-bold text-lg dark:text-white">Iceland</p>
+            <p class="text-black text-lg pt-2 dark:text-white">This is Iceland</p>
           </div>
         </div>
 
@@ -120,9 +143,9 @@
           <div class="w-full h-3/5 bg-[url('./img/LA.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-white pl-3 pt-2">
-            <p class="text-black font-bold text-lg">Los Angeles</p>
-            <p class="text-black text-lg pt-2">This is Los Angeles</p>
+          <div class="w-full h-2/5 bg-white dark:bg-gray-600 pl-3 pt-2">
+            <p class="text-black font-bold text-lg dark:text-white">Los Angeles</p>
+            <p class="text-black text-lg pt-2 dark:text-white">This is Los Angeles</p>
           </div>
         </div>
 
@@ -131,9 +154,9 @@
           <div class="w-full h-3/5 bg-[url('./img/miami.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
-            <p class="text-white font-bold text-lg">Miami</p>
-            <p class="text-white text-lg pt-2">This is Miami</p>
+          <div class="w-full h-2/5 bg-lime-800 dark:bg-gray-400 pl-3 pt-2">
+            <p class="text-white font-bold text-lg dark:text-white">Miami</p>
+            <p class="text-white text-lg pt-2 dark:text-white">This is Miami</p>
           </div>
         </div>
 
@@ -142,9 +165,9 @@
           <div class="w-full h-3/5 bg-[url('./img/sanFrancisco.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-white pl-3 pt-2">
-            <p class="text-black font-bold text-lg">San Francisco</p>
-            <p class="text-black text-lg pt-2">This is San Francisco</p>
+          <div class="w-full h-2/5 bg-white dark:bg-gray-600 pl-3 pt-2">
+            <p class="text-black font-bold text-lg dark:text-white">San Francisco</p>
+            <p class="text-black text-lg pt-2 dark:text-white">This is San Francisco</p>
           </div>
         </div>
 
@@ -153,9 +176,9 @@
           <div class="w-full h-3/5 bg-[url('./img/seattle.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
-            <p class="text-white font-bold text-lg">Seattle</p>
-            <p class="text-white text-lg pt-2">This is Seattle</p>
+          <div class="w-full h-2/5 bg-lime-800 dark:bg-gray-400 pl-3 pt-2">
+            <p class="text-white font-bold text-lg dark:text-white">Seattle</p>
+            <p class="text-white text-lg pt-2 dark:text-white">This is Seattle</p>
           </div>
         </div>
 
@@ -164,9 +187,9 @@
           <div class="w-full h-3/5 bg-[url('./img/switzerland.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-white pl-3 pt-2">
-            <p class="text-black font-bold text-lg">Switzerland</p>
-            <p class="text-black text-lg pt-2">This is Switzerland</p>
+          <div class="w-full h-2/5 bg-white dark:bg-gray-600 pl-3 pt-2">
+            <p class="text-black font-bold text-lg dark:text-white">Switzerland</p>
+            <p class="text-black text-lg pt-2 dark:text-white">This is Switzerland</p>
           </div>
         </div>
 
@@ -175,9 +198,9 @@
           <div class="w-full h-3/5 bg-[url('./img/sydney.jpg')] bg-cover items-center justify-center">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
-            <p class="text-white font-bold text-lg">Sydney</p>
-            <p class="text-white text-lg pt-2">This is Sydney</p>
+          <div class="w-full h-2/5 bg-lime-800 dark:bg-gray-400 pl-3 pt-2">
+            <p class="text-white font-bold text-lg dark:text-white">Sydney</p>
+            <p class="text-white text-lg pt-2 dark:text-white">This is Sydney</p>
           </div>
         </div>
 
@@ -186,9 +209,9 @@
           <div class="w-full h-3/5 bg-[url('./img/yosemite.jpg')] bg-cover ">
             <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
           </div>
-          <div class="w-full h-2/5 bg-white pl-3 pt-2">
-            <p class="text-black font-bold text-lg">Yosemite</p>
-            <p class="text-black text-lg pt-2">This is Yosemite</p>
+          <div class="w-full h-2/5 bg-white dark:bg-gray-600 pl-3 pt-2">
+            <p class="text-black font-bold text-lg dark:text-white">Yosemite</p>
+            <p class="text-black text-lg pt-2 dark:text-white">This is Yosemite</p>
           </div>
         </div>
 
@@ -201,91 +224,92 @@
 
     </div>
 
-    <div class="px-2 h-auto w-full" id="rentas_destacadas">
-      <p class="text-3xl font-semibold text-black pb-6 mt-6">Rentas Destacadas</p>
+    <div class="px-2 h-auto w-full " id="rentas_destacadas">
+      <p class="text-3xl font-semibold text-black pb-6 mt-6 lg:px-6 dark:text-white">Rentas Destacadas</p>
 
-      <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+      <div class="w-full h-full flex flex-col mb-8 items-center justify-center">
 
-        <div class="w-full h-96 bg-[url('./img/chicago.jpg')]  bg-cover rounded-xl">
-          <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">Chicago</p>
-          <p class="text-lg pl-8 text-white mr-24">2 habitaciones, 1 baño, 1 cocina</p>
+        <div class="w-full h-96 bg-[url('./img/chicago.jpg')]  bg-cover rounded-xl bg-center mb-8 lg:bg-center">
+          <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-black">Chicago</p>
+          <p class="text-lg pl-8 text-black mr-24 lg:text-lg">2 habitaciones, 1 baño, 1 cocina</p>
         </div>
 
-        <div class="w-full h-96 bg-[url('./img/chicago.jpg')] bg-cover rounded-xl">
-          <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">Chicago</p>
-          <p class="text-lg pl-8 text-white mr-24">2 habitaciones, 1 baño, 1 cocina</p>
+        <div class="lg:flex lg:h-full md:hidden lg:w-full lg:p-6 lg:space-x-4 ">
+
+          <div class="w-full h-96 bg-[url('./img/LA.jpg')] bg-cover rounded-xl  mb-8 lg:h-auto">
+            <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">Los Angeles</p>
+            <p class="text-lg pl-8 text-white mr-24">2 habitaciones, 1 baño, 1 cocina</p>
+          </div>
+
+          <div class=" h-full w-full space-y-4">
+            <div class="w-full h-96 bg-[url('./img/new_york.jpg')] bg-cover rounded-xl mb-8">
+              <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">New York</p>
+              <p class="text-lg pl-8 text-white mr-24">1 habitacion, 1 baño, 1 cocina</p>
+            </div>
+            <div class="w-full h-96 bg-[url('./img/sydney.jpg')] bg-cover bg-center rounded-xl mb-8">
+              <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">Sydney</p>
+              <p class="text-lg pl-8 text-white mr-24">1 habitacion, 1 baño, 1 cocina</p>
+            </div>
+          </div>
+
+
         </div>
 
-        <div class="w-full h-96 bg-[url('./img/chicago.jpg')] bg-cover rounded-xl">
-          <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">New York</p>
-          <p class="text-lg pl-8 text-white mr-24">1 habitacion, 1 baño, 1 cocina</p>
-        </div>
 
-        <div class="w-full h-96 bg-[url('./img/chicago.jpg')] bg-cover rounded-xl">
-          <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">Los Angeles</p>
-          <p class="text-lg pl-8 text-white mr-24">3 habitacion, 2 baños, 1 cocina</p>
-        </div>
-
-        <div class="w-full h-96 bg-[url('./img/chicago.jpg')] bg-cover rounded-xl">
-          <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">Miami</p>
-          <p class="text-lg pl-8 text-white mr-24">4 habitacion, 2 baños, 1 cocina</p>
-        </div>
-
-        <div class="w-full h-96 bg-[url('./img/chicago.jpg')] bg-cover rounded-xl">
-          <p class="text-2xl px-8 pt-1 pb-2 font-semibold text-white">Europe</p>
-          <p class="text-lg pl-8 text-white mr-24">2 habitacion, 1 baño, 1 cocina</p>
-        </div>
       </div>
 
     </div>
+
+
     <div class="w-full h-auto" id="faqs">
       <div class="w-full h-full px-6 flex flex-col space-y-4">
-        <p class="text-3xl text-black font-semibold mt-6">FAQS</p>
+        <p class="text-3xl text-black font-semibold mt-6 dark:text-white">FAQS</p>
         <div>
-          <p class="text-xl font-lg font-semibold">Politica de Cancelacion</p>
-          <p>
+          <p class="text-xl font-lg font-semibold dark:text-white">Politica de Cancelacion</p>
+          <p class="dark:text-white">
             Para estancias menores a una semana es importante avisar con 3 días de
             anticipación, de caso contario será sancionado.
           </p>
         </div>
         <div>
-          <p class="text-xl font-lg font-semibold pt-4">Métodos de pago</p>
-          <p class="text-lg pt-2">
+          <p class="text-xl font-lg font-semibold pt-4 dark:text-white">Métodos de pago</p>
+          <p class="text-lg pt-2 dark:text-white">
             Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
             Paypal y Binance
           </p>
         </div>
         <div>
-          <p class="text-xl font-lg font-semibold pt-4">Mascotas</p>
-          <p class="text-lg pt-2">El tema de las mascotas dependerá directamente del anfitrión.</p>
+          <p class="text-xl font-lg font-semibold pt-4 dark:text-white">Mascotas</p>
+          <p class="text-lg pt-2 dark:text-white">El tema de las mascotas dependerá directamente del anfitrión.</p>
         </div>
         <div>
-          <p class="text-xl font-lg font-semibold pt-4">Información de Seguridad</p>
-          <p class="text-lg pt-2">
+          <p class="text-xl font-lg font-semibold pt-4 dark:text-white">Información de Seguridad</p>
+          <p class="text-lg pt-2 dark:text-white">
             Todas nuestras estancias cuentan con seguro en caso de accidentes
           </p>
         </div>
         <div>
-          <p class="text-xl font-lg font-semibold pt-4">Estancias Largas</p>
-          <p class="text-lg pt-2">
+          <p class="text-xl font-lg font-semibold pt-4 dark:text-white">Estancias Largas</p>
+          <p class="text-lg pt-2 dark:text-white">
             Contamos con estancias de hasta 3 meses, en este caso es requerido un
             anticipo con un monto del 50% del valor de la renta
           </p>
         </div>
       </div>
     </div>
-    <footer id="about" class="w-full h-auto bg-gray-50 mt-20 mx-2 p-6 space-y-2">
-      <p class="text-lg">Acerca De</p>
-      <p class="text-sm text-gray-300">Inversionistas</p>
-      <p class="text-sm text-gray-300">Empleos</p>
-      <p class="text-sm text-gray-300">Terminos y Condiciones</p>
-      <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
+    <footer id="about" class="w-full h-auto bg-gray-50 mt-20 mx-2 p-6 space-y-2 dark:bg-gray-800">
+      <p class="text-lg dark:text-white">Acerca De</p>
+      <p class="text-sm text-gray-300 dark:text-white">Inversionistas</p>
+      <p class="text-sm text-gray-300 dark:text-white">Empleos</p>
+      <p class="text-sm text-gray-300 dark:text-white">Terminos y Condiciones</p>
+      <p class="text-sm text-gray-300 dark:text-white">Platzi Travel, Inc.</p>
     </footer>
 
   </section>
-  <div class="w-full h-9 bg-white fixed left-0 bottom-0 shadow-2xl flex flex-row justify-around mt-10" id="tabBar">
+  <div id="tabBar "
+    class="w-full h-9 bg-white fixed left-0 bottom-0 shadow-2xl flex flex-row justify-around mt-10 md:hidden">
     <a href="#home">
-      <i class="fa-solid fa-house text-xl text-gray-200"></i>
+
     </a>
     <a href="#recomendados">
       <i class="fa-solid fa-magnifying-glass text-xl text-gray-200"></i>
@@ -293,7 +317,7 @@
     <a href="#rentas_destacadas">
       <i class="fa-solid fa-heart text-xl text-gray-200"></i>
     </a>
-    <a href="#darkMode">
+    <a id="botonDarkSecundario">
       <i class="fa-solid fa-moon text-xl text-gray-200"></i>
     </a>
     <a href="#">
@@ -301,7 +325,18 @@
     </a>
   </div>
 
+  <script>
+    const htmlElement = document.querySelectorAll("html")
+    const btnPrincipal = document.querySelector("#botonDarkPrincipal")
+    const btnSecundario = document.querySelector("#botonDarkSecundario")
 
+    btnPrincipal.addEventListener("click", () => {
+      htmlElement.classList.contains("dark") ? htmlElement.classList.remove("dark") : htmlElement.classList.add("dark")
+    })
+    btnSecundario.addEventListener("click", () => {
+      htmlElement.classList.contains("dark") ? htmlElement.classList.remove("dark") : htmlElement.classList.add("dark")
+    })
+  </script>
 </body>
 
 </html>
