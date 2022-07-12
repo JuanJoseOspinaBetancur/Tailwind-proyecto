@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <title>Platzi Travel</title>
+</head>
+
+<body>
+  <nav></nav>
+  <div id="tabBar">
+
+  </div>
+  <section class="w-full h-screen">
+    <div id="home">
+      <!-- aca estamos cuadrando lo de la imagen -->
+      <div class="w-full h-3/4 ">
+        <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+
+          <input class="outline-none p-3 rounded-full shadow-xl" placeholder="San Francisco" type="search" name=""
+            id="">
+
+          <button class="w-36 bg-white text-xl shadow-xl text-prin text-red-500 font-semibold p-4 rounded-full"
+            type="button">Explorar</button>
+
+        </div>
+        <div class="w-full h-full">
+          <img src="./img/sanFrancisco.jpg" alt="no found">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="p-6 " id="recomendados">
+      <p class="text-3xl font-semibold text-black">Recomendados</p>
+
+      <div class="w-auto h-auto items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide">
+        
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/norway.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
+            <p class="text-white font-bold text-lg">Norway</p>
+            <p class="text-white text-lg pt-2">Beautiful landscapes</p>
+          </div>
+        </div>
+
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/new_york.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-white pl-3 pt-2">
+            <p class="text-black font-bold text-lg">New York</p>
+            <p class="text-black text-lg pt-2">Concret jungle</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/bali.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
+            <p class="text-white font-bold text-lg">Bali</p>
+            <p class="text-white text-lg pt-2">This is bali</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/chicago.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-white pl-3 pt-2">
+            <p class="text-black font-bold text-lg">Chicago</p>
+            <p class="text-black text-lg pt-2">This is Chicago</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/europe.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
+            <p class="text-white font-bold text-lg">Europe</p>
+            <p class="text-white text-lg pt-2">This is Europe</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64  shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/iceland.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-white pl-3 pt-2">
+            <p class="text-black font-bold text-lg">Iceland</p>
+            <p class="text-black text-lg pt-2">This is Iceland</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/LA.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-white pl-3 pt-2">
+            <p class="text-black font-bold text-lg">Los Angeles</p>
+            <p class="text-black text-lg pt-2">This is Los Angeles</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/miami.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
+            <p class="text-white font-bold text-lg">Miami</p>
+            <p class="text-white text-lg pt-2">This is Miami</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/sanFrancisco.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-white pl-3 pt-2">
+            <p class="text-black font-bold text-lg">San Francisco</p>
+            <p class="text-black text-lg pt-2">This is San Francisco</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/seattle.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
+            <p class="text-white font-bold text-lg">Seattle</p>
+            <p class="text-white text-lg pt-2">This is Seattle</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/switzerland.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-white pl-3 pt-2">
+            <p class="text-black font-bold text-lg">Switzerland</p>
+            <p class="text-black text-lg pt-2">This is Switzerland</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/sydney.jpg')] bg-cover items-center justify-center">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-lime-800 pl-3 pt-2">
+            <p class="text-white font-bold text-lg">Sydney</p>
+            <p class="text-white text-lg pt-2">This is Sydney</p>
+          </div>
+        </div>
+  
+        <div class="w-48 h-64 flex-none shadow-2xl rounded-2xl mt-10 overflow-hidden">
+          <div class="w-full h-3/5 bg-[url('./img/yosemite.jpg')] bg-cover ">
+           <!--ALTERNATIVA <3  <img src="./img/norway.jpg" alt=""> -->
+          </div>
+          <div class="w-full h-2/5 bg-white pl-3 pt-2">
+            <p class="text-black font-bold text-lg">Yosemite</p>
+            <p class="text-black text-lg pt-2">This is Yosemite</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Aca creamos las cards -->
+      
+
+      
+
+
+    </div>
+    <div id="rentas_destacadas"></div>
+  </section>
+
+
+</body>
+
+</html>
